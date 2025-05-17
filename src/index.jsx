@@ -8,7 +8,16 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <App />,
+    children: [
+      {
+        path: "",
+        element: <Homepage />,
   },
+  {
+    path: "reservation",
+    element: <Reservation />,
+  }]
+}
 ]);
 
 createRoot(document.querySelector('#app')).render(
