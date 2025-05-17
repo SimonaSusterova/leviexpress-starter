@@ -8,7 +8,7 @@ export const Footer = () => (
         LeviExpress
       </div>
       <div className="copyright">
-        Czechitas Digitální akademie: Web, © 2021 - 2023
+        Czechitas Digitální akademie: Web, © 2021 - 2024
       </div>
     </div>
   </footer>
