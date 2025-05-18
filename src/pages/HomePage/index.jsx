@@ -1,14 +1,3 @@
-// import { JourneyPicker } from '../../components/JourneyPicker';
-
-// export const HomePage = () => {
-//   return (
-//     <main>
-//       <JourneyPicker />
-//     </main>
-//   );
-// };
-
-
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { JourneyPicker } from "../../components/JourneyPicker";

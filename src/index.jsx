@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import { App } from './components/App';
 import { HomePage } from './pages/HomePage';
 import { Reservation } from './pages/Reservation';
@@ -12,18 +12,17 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '',
-        element: <HomePage />,
+        path: "",
+        element: <HomePage />
       },
       {
-        path: 'reservation/:id',
-        element: <Reservation />,
-      },
-    ],
+        path: "reservation/:id",
+        element: <Reservation />
+      }
+    ]
   },
 ]);
 
-createRoot(document.getElementById('app')).render(
+createRoot(document.querySelector('#app')).render(
   <RouterProvider router={router} />
 );
-
